@@ -1,0 +1,469 @@
+index_col,Common Name,Foe
+0,NIST0011,0
+1,NIST0012,0
+5,NIST0020,1
+6,NIST0023,1
+7,NIST0025,1
+9,NIST0027,1
+11,NIST0045,1
+12,NIST0048,1
+14,NIST0052,1
+17,NIST0059,1
+25,NIST0129,0
+28,Pseudomonas fluorescens,0
+30,Enterohemorrhagic E. coli toxic,1
+31,Enterohemorrhagic E. coli non-toxic,0
+32,Salmonella enterica,1
+33,Staphylococcus aureus JE2,1
+34,Staphylococcus aureus JE2 ΔsaeR,0
+36,Pseudomonas aeruginosa PAO1,1
+37,E. coli with JES101 plasmid,1
+38,Pseudomonas aeruginosa PAO1 ΔpilA,0
+40,NIST0011,0
+41,NIST0012,0
+45,NIST0020,1
+46,NIST0023,1
+47,NIST0025,1
+49,NIST0027,1
+51,NIST0045,1
+52,NIST0048,1
+54,NIST0052,1
+57,NIST0059,1
+65,NIST0129,0
+68,Pseudomonas fluorescens,0
+70,Enterohemorrhagic E. coli toxic,1
+71,Enterohemorrhagic E. coli non-toxic,0
+72,Salmonella enterica,1
+73,Staphylococcus aureus JE2,1
+74,Staphylococcus aureus JE2 ΔsaeR,0
+76,Pseudomonas aeruginosa PAO1,1
+77,E. coli with JES101 plasmid,1
+78,Pseudomonas aeruginosa PAO1 ΔpilA,0
+80,NIST0011,0
+81,NIST0012,0
+85,NIST0020,1
+86,NIST0023,1
+87,NIST0025,1
+89,NIST0027,1
+91,NIST0045,1
+92,NIST0048,1
+94,NIST0052,1
+97,NIST0059,1
+105,NIST0129,0
+108,Pseudomonas fluorescens,0
+110,Enterohemorrhagic E. coli toxic,1
+111,Enterohemorrhagic E. coli non-toxic,0
+112,Salmonella enterica,1
+113,Staphylococcus aureus JE2,1
+114,Staphylococcus aureus JE2 ΔsaeR,0
+116,Pseudomonas aeruginosa PAO1,1
+117,E. coli with JES101 plasmid,1
+118,Pseudomonas aeruginosa PAO1 ΔpilA,0
+120,NIST0011,0
+121,NIST0012,0
+125,NIST0020,1
+126,NIST0023,1
+127,NIST0025,1
+129,NIST0027,1
+131,NIST0045,1
+132,NIST0048,1
+134,NIST0052,1
+137,NIST0059,1
+145,NIST0129,0
+148,Pseudomonas fluorescens,0
+150,Enterohemorrhagic E. coli toxic,1
+151,Enterohemorrhagic E. coli non-toxic,0
+152,Salmonella enterica,1
+153,Staphylococcus aureus JE2,1
+154,Staphylococcus aureus JE2 ΔsaeR,0
+156,Pseudomonas aeruginosa PAO1,1
+157,E. coli with JES101 plasmid,1
+158,Pseudomonas aeruginosa PAO1 ΔpilA,0
+160,NIST0011,0
+161,NIST0012,0
+165,NIST0020,1
+166,NIST0023,1
+167,NIST0025,1
+169,NIST0027,1
+171,NIST0045,1
+172,NIST0048,1
+174,NIST0052,1
+177,NIST0059,1
+185,NIST0129,0
+188,Pseudomonas fluorescens,0
+190,Enterohemorrhagic E. coli toxic,1
+191,Enterohemorrhagic E. coli non-toxic,0
+192,Salmonella enterica,1
+193,Staphylococcus aureus JE2,1
+194,Staphylococcus aureus JE2 ΔsaeR,0
+196,Pseudomonas aeruginosa PAO1,1
+197,E. coli with JES101 plasmid,1
+198,Pseudomonas aeruginosa PAO1 ΔpilA,0
+200,NIST0011,0
+201,NIST0012,0
+205,NIST0020,1
+206,NIST0023,1
+207,NIST0025,1
+209,NIST0027,1
+211,NIST0045,1
+212,NIST0048,1
+214,NIST0052,1
+217,NIST0059,1
+225,NIST0129,0
+228,Pseudomonas fluorescens,0
+230,Enterohemorrhagic E. coli toxic,1
+231,Enterohemorrhagic E. coli non-toxic,0
+232,Salmonella enterica,1
+233,Staphylococcus aureus JE2,1
+234,Staphylococcus aureus JE2 ΔsaeR,0
+236,Pseudomonas aeruginosa PAO1,1
+237,E. coli with JES101 plasmid,1
+238,Pseudomonas aeruginosa PAO1 ΔpilA,0
+240,NIST0011,0
+241,NIST0012,0
+245,NIST0020,1
+246,NIST0023,1
+247,NIST0025,1
+249,NIST0027,1
+251,NIST0045,1
+252,NIST0048,1
+254,NIST0052,1
+257,NIST0059,1
+265,NIST0129,0
+268,Pseudomonas fluorescens,0
+270,Enterohemorrhagic E. coli toxic,1
+271,Enterohemorrhagic E. coli non-toxic,0
+272,Salmonella enterica,1
+273,Staphylococcus aureus JE2,1
+274,Staphylococcus aureus JE2 ΔsaeR,0
+276,Pseudomonas aeruginosa PAO1,1
+277,E. coli with JES101 plasmid,1
+278,Pseudomonas aeruginosa PAO1 ΔpilA,0
+280,NIST0011,0
+281,NIST0012,0
+285,NIST0020,1
+286,NIST0023,1
+287,NIST0025,1
+289,NIST0027,1
+291,NIST0045,1
+292,NIST0048,1
+294,NIST0052,1
+297,NIST0059,1
+305,NIST0129,0
+308,Pseudomonas fluorescens,0
+310,Enterohemorrhagic E. coli toxic,1
+311,Enterohemorrhagic E. coli non-toxic,0
+312,Salmonella enterica,1
+313,Staphylococcus aureus JE2,1
+314,Staphylococcus aureus JE2 ΔsaeR,0
+316,Pseudomonas aeruginosa PAO1,1
+317,E. coli with JES101 plasmid,1
+318,Pseudomonas aeruginosa PAO1 ΔpilA,0
+320,NIST0011,0
+321,NIST0012,0
+325,NIST0020,1
+326,NIST0023,1
+327,NIST0025,1
+329,NIST0027,1
+331,NIST0045,1
+332,NIST0048,1
+334,NIST0052,1
+337,NIST0059,1
+345,NIST0129,0
+348,Pseudomonas fluorescens,0
+350,Enterohemorrhagic E. coli toxic,1
+351,Enterohemorrhagic E. coli non-toxic,0
+352,Salmonella enterica,1
+353,Staphylococcus aureus JE2,1
+354,Staphylococcus aureus JE2 ΔsaeR,0
+356,Pseudomonas aeruginosa PAO1,1
+357,E. coli with JES101 plasmid,1
+358,Pseudomonas aeruginosa PAO1 ΔpilA,0
+360,NIST0011,0
+361,NIST0012,0
+365,NIST0020,1
+366,NIST0023,1
+367,NIST0025,1
+369,NIST0027,1
+371,NIST0045,1
+372,NIST0048,1
+374,NIST0052,1
+377,NIST0059,1
+385,NIST0129,0
+388,Pseudomonas fluorescens,0
+390,Enterohemorrhagic E. coli toxic,1
+391,Enterohemorrhagic E. coli non-toxic,0
+392,Salmonella enterica,1
+393,Staphylococcus aureus JE2,1
+394,Staphylococcus aureus JE2 ΔsaeR,0
+396,Pseudomonas aeruginosa PAO1,1
+397,E. coli with JES101 plasmid,1
+398,Pseudomonas aeruginosa PAO1 ΔpilA,0
+400,NIST0011,0
+401,NIST0012,0
+405,NIST0020,1
+406,NIST0023,1
+407,NIST0025,1
+409,NIST0027,1
+411,NIST0045,1
+412,NIST0048,1
+414,NIST0052,1
+417,NIST0059,1
+425,NIST0129,0
+428,Pseudomonas fluorescens,0
+430,Enterohemorrhagic E. coli toxic,1
+431,Enterohemorrhagic E. coli non-toxic,0
+432,Salmonella enterica,1
+433,Staphylococcus aureus JE2,1
+434,Staphylococcus aureus JE2 ΔsaeR,0
+436,Pseudomonas aeruginosa PAO1,1
+437,E. coli with JES101 plasmid,1
+438,Pseudomonas aeruginosa PAO1 ΔpilA,0
+440,NIST0011,0
+441,NIST0012,0
+445,NIST0020,1
+446,NIST0023,1
+447,NIST0025,1
+449,NIST0027,1
+451,NIST0045,1
+452,NIST0048,1
+454,NIST0052,1
+457,NIST0059,1
+465,NIST0129,0
+468,Pseudomonas fluorescens,0
+470,Enterohemorrhagic E. coli toxic,1
+471,Enterohemorrhagic E. coli non-toxic,0
+472,Salmonella enterica,1
+473,Staphylococcus aureus JE2,1
+474,Staphylococcus aureus JE2 ΔsaeR,0
+476,Pseudomonas aeruginosa PAO1,1
+477,E. coli with JES101 plasmid,1
+478,Pseudomonas aeruginosa PAO1 ΔpilA,0
+480,NIST0011,0
+481,NIST0012,0
+485,NIST0020,1
+486,NIST0023,1
+487,NIST0025,1
+489,NIST0027,1
+491,NIST0045,1
+492,NIST0048,1
+494,NIST0052,1
+497,NIST0059,1
+505,NIST0129,0
+508,Pseudomonas fluorescens,0
+510,Enterohemorrhagic E. coli toxic,1
+511,Enterohemorrhagic E. coli non-toxic,0
+512,Salmonella enterica,1
+513,Staphylococcus aureus JE2,1
+514,Staphylococcus aureus JE2 ΔsaeR,0
+516,Pseudomonas aeruginosa PAO1,1
+517,E. coli with JES101 plasmid,1
+518,Pseudomonas aeruginosa PAO1 ΔpilA,0
+520,NIST0011,0
+521,NIST0012,0
+525,NIST0020,1
+526,NIST0023,1
+527,NIST0025,1
+529,NIST0027,1
+531,NIST0045,1
+532,NIST0048,1
+534,NIST0052,1
+537,NIST0059,1
+545,NIST0129,0
+548,Pseudomonas fluorescens,0
+550,Enterohemorrhagic E. coli toxic,1
+551,Enterohemorrhagic E. coli non-toxic,0
+552,Salmonella enterica,1
+553,Staphylococcus aureus JE2,1
+554,Staphylococcus aureus JE2 ΔsaeR,0
+556,Pseudomonas aeruginosa PAO1,1
+557,E. coli with JES101 plasmid,1
+558,Pseudomonas aeruginosa PAO1 ΔpilA,0
+560,NIST0011,0
+561,NIST0012,0
+565,NIST0020,1
+566,NIST0023,1
+567,NIST0025,1
+569,NIST0027,1
+571,NIST0045,1
+572,NIST0048,1
+574,NIST0052,1
+577,NIST0059,1
+585,NIST0129,0
+588,Pseudomonas fluorescens,0
+590,Enterohemorrhagic E. coli toxic,1
+591,Enterohemorrhagic E. coli non-toxic,0
+592,Salmonella enterica,1
+593,Staphylococcus aureus JE2,1
+594,Staphylococcus aureus JE2 ΔsaeR,0
+596,Pseudomonas aeruginosa PAO1,1
+597,E. coli with JES101 plasmid,1
+598,Pseudomonas aeruginosa PAO1 ΔpilA,0
+600,NIST0011,0
+601,NIST0012,0
+605,NIST0020,1
+606,NIST0023,1
+607,NIST0025,1
+609,NIST0027,1
+611,NIST0045,1
+612,NIST0048,1
+614,NIST0052,1
+617,NIST0059,1
+625,NIST0129,0
+628,Pseudomonas fluorescens,0
+630,Enterohemorrhagic E. coli toxic,1
+631,Enterohemorrhagic E. coli non-toxic,0
+632,Salmonella enterica,1
+633,Staphylococcus aureus JE2,1
+634,Staphylococcus aureus JE2 ΔsaeR,0
+636,Pseudomonas aeruginosa PAO1,1
+637,E. coli with JES101 plasmid,1
+638,Pseudomonas aeruginosa PAO1 ΔpilA,0
+640,NIST0011,0
+641,NIST0012,0
+645,NIST0020,1
+646,NIST0023,1
+647,NIST0025,1
+649,NIST0027,1
+651,NIST0045,1
+652,NIST0048,1
+654,NIST0052,1
+657,NIST0059,1
+665,NIST0129,0
+668,Pseudomonas fluorescens,0
+670,Enterohemorrhagic E. coli toxic,1
+671,Enterohemorrhagic E. coli non-toxic,0
+672,Salmonella enterica,1
+673,Staphylococcus aureus JE2,1
+674,Staphylococcus aureus JE2 ΔsaeR,0
+676,Pseudomonas aeruginosa PAO1,1
+677,E. coli with JES101 plasmid,1
+678,Pseudomonas aeruginosa PAO1 ΔpilA,0
+680,NIST0011,0
+681,NIST0012,0
+685,NIST0020,1
+686,NIST0023,1
+687,NIST0025,1
+689,NIST0027,1
+691,NIST0045,1
+692,NIST0048,1
+694,NIST0052,1
+697,NIST0059,1
+705,NIST0129,0
+708,Pseudomonas fluorescens,0
+710,Enterohemorrhagic E. coli toxic,1
+711,Enterohemorrhagic E. coli non-toxic,0
+712,Salmonella enterica,1
+713,Staphylococcus aureus JE2,1
+714,Staphylococcus aureus JE2 ΔsaeR,0
+716,Pseudomonas aeruginosa PAO1,1
+717,E. coli with JES101 plasmid,1
+718,Pseudomonas aeruginosa PAO1 ΔpilA,0
+720,NIST0013,0
+722,NIST0016,1
+723,NIST0041,0
+724,NIST0053,1
+729,NIST0067,1
+732,NIST0075,1
+733,NIST0013,0
+735,NIST0016,1
+736,NIST0041,0
+737,NIST0053,1
+742,NIST0067,1
+745,NIST0075,1
+746,NIST0013,0
+748,NIST0016,1
+749,NIST0041,0
+750,NIST0053,1
+755,NIST0067,1
+758,NIST0075,1
+759,NIST0013,0
+761,NIST0016,1
+762,NIST0041,0
+763,NIST0053,1
+768,NIST0067,1
+771,NIST0075,1
+772,NIST0013,0
+774,NIST0016,1
+775,NIST0041,0
+776,NIST0053,1
+781,NIST0067,1
+784,NIST0075,1
+785,NIST0013,0
+787,NIST0016,1
+788,NIST0041,0
+789,NIST0053,1
+794,NIST0067,1
+797,NIST0075,1
+798,NIST0013,0
+800,NIST0016,1
+801,NIST0041,0
+802,NIST0053,1
+807,NIST0067,1
+810,NIST0075,1
+811,NIST0013,0
+813,NIST0016,1
+814,NIST0041,0
+815,NIST0053,1
+820,NIST0067,1
+823,NIST0075,1
+824,NIST0013,0
+826,NIST0016,1
+827,NIST0041,0
+828,NIST0053,1
+833,NIST0067,1
+836,NIST0075,1
+837,NIST0013,0
+839,NIST0016,1
+840,NIST0041,0
+841,NIST0053,1
+846,NIST0067,1
+849,NIST0075,1
+850,NIST0013,0
+852,NIST0016,1
+853,NIST0041,0
+854,NIST0053,1
+859,NIST0067,1
+862,NIST0075,1
+863,NIST0013,0
+865,NIST0016,1
+866,NIST0041,0
+867,NIST0053,1
+872,NIST0067,1
+875,NIST0075,1
+876,NIST0013,0
+878,NIST0016,1
+879,NIST0041,0
+880,NIST0053,1
+885,NIST0067,1
+888,NIST0075,1
+889,NIST0013,0
+891,NIST0016,1
+892,NIST0041,0
+893,NIST0053,1
+898,NIST0067,1
+901,NIST0075,1
+902,NIST0013,0
+904,NIST0016,1
+905,NIST0041,0
+906,NIST0053,1
+911,NIST0067,1
+914,NIST0075,1
+915,NIST0013,0
+917,NIST0016,1
+918,NIST0041,0
+919,NIST0053,1
+924,NIST0067,1
+927,NIST0075,1
+928,NIST0013,0
+930,NIST0016,1
+931,NIST0041,0
+932,NIST0053,1
+937,NIST0067,1
+940,NIST0075,1
+941,NIST0013,0
+943,NIST0016,1
+944,NIST0041,0
+945,NIST0053,1
+950,NIST0067,1
+953,NIST0075,1
