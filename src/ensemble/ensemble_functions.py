@@ -6,8 +6,10 @@ from harness.utils.parsing_results import *
 from harness.test_harness_class import TestHarness
 from sklearn.metrics import balanced_accuracy_score
 from ..preprocessing.reference import fof_strain_mapping
+from functools import reduce
 
 strain_mapping_data = fof_strain_mapping.get_mapping_df()
+foe_dict = pd.Series(strain_mapping_data['Foe'].values, index = strain_mapping_data['Common Name']).to_dict()
 
 def get_strain_mapping_short():
     strain_mapping_short = strain_mapping_data[['Common Name','Foe']]
@@ -15,6 +17,13 @@ def get_strain_mapping_short():
     strain_mapping_short.dropna(inplace = True)
     strain_mapping_short['Foe'] = strain_mapping_short['Foe'].astype(int)
     return strain_mapping_short
+
+def get_common_to_genus_species():
+    strain_mapping_copy = strain_mapping_data.copy()
+    strain_mapping_copy['genus_species'] = strain_mapping_copy['Genus'].str.capitalize() + ' '+ strain_mapping_copy.Species
+    name_dict = pd.Series(strain_mapping_copy['genus_species'].values, index = strain_mapping_copy['Common Name']).to_dict()
+    return name_dict
+
 
 def stage2_balanced_accuracy(assay, model_name, th_path):
     '''
@@ -121,7 +130,6 @@ def get_stage3_performance1(assay_test_results, assay_names, threshold = 0, stra
     # determine stage 3 accuracy (overall accuracy)
     stage3_mean = joined_test_df.groupby(['Common Name'])['Foe_prob_predictions'].mean().reset_index()
     stage3_mean['Foe_pred'] = stage3_mean['Foe_prob_predictions'].apply(lambda x: 0 if x < 0.5 else 1) 
-    foe_dict = pd.Series(strain_mapping_data.Foe.values, index = strain_mapping_data['Common Name']).to_dict()
     stage3_mean['Foe'] = stage3_mean['Common Name'].map(foe_dict).astype(int)
     stage3_accuracy = 100*accuracy_score(stage3_mean.Foe, stage3_mean.Foe_pred)
     stage3_precision = 100*precision_score(stage3_mean.Foe, stage3_mean.Foe_pred)
@@ -245,6 +253,51 @@ def get_stage3_mean(assay_test_results, threshold = 0, strain_mapping_data = str
     # determine stage 3 accuracy (overall accuracy)
     stage3_mean = joined_test_df.groupby(['Common Name'])['Foe_prob_predictions'].mean().reset_index()
     stage3_mean['Foe_pred'] = stage3_mean['Foe_prob_predictions'].apply(lambda x: 0 if x < 0.5 else 1) 
-    foe_dict = pd.Series(strain_mapping_data.Foe.values, index = strain_mapping_data['Common Name']).to_dict()
     stage3_mean['Foe'] = stage3_mean['Common Name'].map(foe_dict).astype(int)
     return stage3_mean
+
+def stage3_by_strain(best_assay_data_list, thresh):
+    '''Get stage 3 (final prediction for each strain by aggregating across assays) predictions'''
+    stage3_all = []
+    for i in range(8):
+        stage3_mean = get_stage3_mean(best_assay_data_list,0.02)
+        stage3_all.append(stage3_mean)
+    stage3_all = pd.concat(stage3_all)   
+    stage3_agg = stage3_all.groupby('Common Name')['Foe_prob_predictions'].mean().reset_index()
+    stage3_agg['Foe'] = stage3_agg['Common Name'].map(foe_dict)
+    stage3_agg['Foe'] = stage3_agg['Foe'].astype(int)
+    stage3_agg['Foe_pred'] = stage3_agg['Foe_prob_predictions'].apply(lambda x: 0 if x < 0.5 else 1)
+    stage3_agg['Foe_pred'] = stage3_agg['Foe_pred'].astype(int)
+    stage3_agg.index = stage3_agg['Common Name']
+    acc = balanced_accuracy_score(stage3_agg.Foe, stage3_agg.Foe_pred)
+    print('Accuracy', round(acc, 3))
+    return stage3_agg
+
+def plot_strain_level_heatmap(assay_data_list, assay_name_list, stage3_mean):
+    '''A function to plot all the predictions per assay and in the ensemble prediction'''
+    name_dict = get_common_to_genus_species()
+    assay_mean_list = []
+    for assay in assay_data_list:
+        new_assay = assay[~assay.Foe_prob_predictions.between(0.45,0.55)]
+        assay_mean = new_assay.groupby('Common Name')['Foe_prob_predictions'].mean()
+        assay_mean_list.append(assay_mean)
+    joined_df = reduce(lambda left, right: pd.merge(left, right, left_index = True, right_index = True), assay_mean_list)
+    joined_df = pd.merge(joined_df, stage3_mean, left_index = True, right_index = True)
+    
+    joined_df['Foe'] = joined_df.index.map(foe_dict)
+    joined_df = joined_df[joined_df.index.str.contains('NIST')]
+    joined_df['index_col'] = joined_df.index.map(name_dict)
+    joined_df = joined_df.sort_values(['Foe','index_col'])
+    joined_df = joined_df.drop(columns = ['index_col'])
+    xticklabels = assay_name_list + ['Ensemble probabilities','Ensemble predictions','Pathogenicity label']
+    joined_df.columns = xticklabels
+    yticklabels = joined_df.index.map(name_dict)
+#     joined_df_t = joined_df.T
+    sns.set(rc={'figure.figsize':(6,15)},font_scale=1.6)
+    sns.heatmap(joined_df, center = 0.5, cmap = 'coolwarm',
+                xticklabels = xticklabels, yticklabels = yticklabels)
+#                 xticklabels=joined_df.columns.tolist(), yticklabels=yticklabels)
+    plt.xticks(rotation=40, ha='right')
+    plt.xlabel('')
+    plt.ylabel('')
+    return joined_df
