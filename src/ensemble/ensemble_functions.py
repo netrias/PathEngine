@@ -301,3 +301,10 @@ def plot_strain_level_heatmap(assay_data_list, assay_name_list, stage3_mean):
     plt.xlabel('')
     plt.ylabel('')
     return joined_df
+
+def get_pos_overlap(joined_mean_df):
+    all_foe_strains = joined_mean_df[joined_mean_df['Pathogenicity label'] == 1].index
+    for i in range(4,0,-1):
+        foe_in_n_assays = joined_mean_df.index[(joined_mean_df.iloc[:,:4] > 0.5).sum(axis = 1) >= i]
+        overlap_strains = set(foe_in_n_assays).intersection(set(all_foe_strains))
+        print(f'% foe predicted as foe in {i} assays', round(len(overlap_strains)/len(all_foe_strains), 3))
