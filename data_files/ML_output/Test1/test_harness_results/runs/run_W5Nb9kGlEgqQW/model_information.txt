@@ -1,0 +1,139 @@
+run_type: Classification
+logistic_classifier
+Feature columns used by model: 
+["DD", "DD^2", "DD^2_std", "antibiotic_Doxycycline", "antibiotic_Rifampin", "antibiotic_Meropenem", "antibiotic_Imipenem", "antibiotic_Ciprofloxacin", "antibiotic_Azithromycin"]
+
+
+Model Instantiation Trace:
+ Level 0
+ - Path: c:\users\bbche\documents\gitrepos\sd2program\test-harness\harness\test_harness_models_abstract_classes.py
+ - Line: 13,  Function: __init__
+
+ Level 1
+ - Path: c:\users\bbche\documents\gitrepos\sd2program\test-harness\harness\th_model_instances\hamed_models\rocklin_models.py
+ - Line: 25,  Function: logistic_classifier
+
+ Level 2
+ - Path: c:\users\bbche\documents\gitrepos\sd2program\test-harness\harness\test_harness_class.py
+ - Line: 517,  Function: _execute_run
+
+ Level 3
+ - Path: c:\users\bbche\documents\gitrepos\sd2program\test-harness\harness\test_harness_class.py
+ - Line: 175,  Function: run_custom
+
+ Level 4
+ - Path: ..\models\ML_functions.py
+ - Line: 97,  Function: run_ml_test1
+
+ Level 5
+ - Path: <ipython-input-8-b681a16fa6ad>
+ - Line: 1,  Function: <module>
+
+ Level 6
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\IPython\core\interactiveshell.py
+ - Line: 3441,  Function: run_code
+
+ Level 7
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\IPython\core\interactiveshell.py
+ - Line: 3361,  Function: run_ast_nodes
+
+ Level 8
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\IPython\core\interactiveshell.py
+ - Line: 3169,  Function: run_cell_async
+
+ Level 9
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\IPython\core\async_helpers.py
+ - Line: 68,  Function: _pseudo_sync_runner
+
+ Level 10
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\IPython\core\interactiveshell.py
+ - Line: 2944,  Function: _run_cell
+
+ Level 11
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\IPython\core\interactiveshell.py
+ - Line: 2898,  Function: run_cell
+
+ Level 12
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\ipykernel\zmqshell.py
+ - Line: 536,  Function: run_cell
+
+ Level 13
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\ipykernel\ipkernel.py
+ - Line: 306,  Function: do_execute
+
+ Level 14
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\tornado\gen.py
+ - Line: 234,  Function: wrapper
+
+ Level 15
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\ipykernel\kernelbase.py
+ - Line: 543,  Function: execute_request
+
+ Level 16
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\tornado\gen.py
+ - Line: 234,  Function: wrapper
+
+ Level 17
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\ipykernel\kernelbase.py
+ - Line: 268,  Function: dispatch_shell
+
+ Level 18
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\tornado\gen.py
+ - Line: 234,  Function: wrapper
+
+ Level 19
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\ipykernel\kernelbase.py
+ - Line: 365,  Function: process_one
+
+ Level 20
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\tornado\gen.py
+ - Line: 775,  Function: run
+
+ Level 21
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\tornado\gen.py
+ - Line: 814,  Function: inner
+
+ Level 22
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\tornado\ioloop.py
+ - Line: 741,  Function: _run_callback
+
+ Level 23
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\tornado\ioloop.py
+ - Line: 688,  Function: <lambda>
+
+ Level 24
+ - Path: C:\Users\bbche\miniconda3\lib\asyncio\events.py
+ - Line: 81,  Function: _run
+
+ Level 25
+ - Path: C:\Users\bbche\miniconda3\lib\asyncio\base_events.py
+ - Line: 1859,  Function: _run_once
+
+ Level 26
+ - Path: C:\Users\bbche\miniconda3\lib\asyncio\base_events.py
+ - Line: 570,  Function: run_forever
+
+ Level 27
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\tornado\platform\asyncio.py
+ - Line: 199,  Function: start
+
+ Level 28
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\ipykernel\kernelapp.py
+ - Line: 612,  Function: start
+
+ Level 29
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\traitlets\config\application.py
+ - Line: 845,  Function: launch_instance
+
+ Level 30
+ - Path: C:\Users\bbche\miniconda3\lib\site-packages\ipykernel_launcher.py
+ - Line: 16,  Function: <module>
+
+ Level 31
+ - Path: C:\Users\bbche\miniconda3\lib\runpy.py
+ - Line: 87,  Function: _run_code
+
+ Level 32
+ - Path: C:\Users\bbche\miniconda3\lib\runpy.py
+ - Line: 194,  Function: _run_module_as_main
+
