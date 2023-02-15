@@ -2,3 +2,7 @@ matplotlib==3.3.2
 seaborn==0.11.0
 pandas==1.1.2
 scikit_learn==0.24.1
+FlowCal==1.3.0
+umap-learn==0.5.3
+test_harness @ git+https://github.com/SD2E/test-harness@develop#egg=test_harness
+PE_eda @ git+https://github.com/netrias/PE_eda@master#egg=PE_eda
